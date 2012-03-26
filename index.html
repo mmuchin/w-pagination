@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagination Widget</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.w.pagination.js"></script>
+</head>
+<body>
+<div class="myPagination"></div>
+<div class="content">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="pagination-conected" style="background: #eeeeee; width: 100%; height: 40p;">&nbsp;</div>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<div class="pagination2"></div>
+<script type="text/javascript">
+	$(function() {
+
+		$(".myPagination").pagination({ 
+				pageCount: 20,
+				pageChange: function(p, ui) {
+			}, 
+			connected: true,
+			connectWith: ".pagination-conected",
+			currentPage: 10
+		});
+
+		$(".pagination2").pagination({ 
+			pageCount: 30,
+			pageChange: function(p, ui) {
+			}
+		});
+	});
+</script>
+</body>
+</html>
