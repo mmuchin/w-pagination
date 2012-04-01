@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Add To Cart Demo</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+	<script type="text/javascript" src="../vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="../vendor/jquery.ui.widget.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+	<script type="text/javascript" src="../vendor/prettify.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="subnav subnav-fixed">
+    <ul class="nav nav-pills">
+      <li class="active"><a href="index.html">Overview</a></li>
+      <li class=""><a href="options.html">Options</a></li>
+      <li class=""><a href="methods.html">Methods</a></li>
+      <li class=""><a href="events.html">Events</a></li>
+      <li class=""><a href="examples.html">Examples</a></li>
+      <li class=""><a href="functionality.html">Default Functionality</a></li>
+    </ul>
+  </div>
+		<div class="row-fluid">
+			<div class="span3">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-list">
+						<li class="nav-header">Pagination Documentation</li>
+						<li class="active"><a href="index.html">Overview</a></li>
+						<li><a href="options.html">Options</a></li>
+						<li><a href="methods.html">Methods</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li class="nav-header">Examples</li>
+						<li><a href="functionality.html">Default Functionality</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span9">
+				<div class="hero-unit">
+					<h1>Pagination Widget Overview</h1>
+					<p>Pagination widget is designet to quickly place pagination contol on the page. It's main purpose is to trigger a custom event of pageChange when clicking on a page number control or next / prev directional navigation.</p>
+					<p>
+						<pre class="prettyprint linenums lang-html">
+&lt;div id="myPaginationContainer&gt; &lt;/div&gt;</pre>
+					</p>
+					<p>
+						To initialize the plugin writh the following code: </p>
+					<pre class="prettyprint linenums">
+&lt;script type="text/javascript"&gt;
+	$("#myPaginationContainer").pagination({ pageCount: 20 });
+&lt;script&gt;</pre>
+
+					<p>
+						Optionally currentPage can be passed to start from a specific page. If currentPage is not specified widget will start from page 1: </p>
+					<pre class="prettyprint linenums">
+&lt;script type="text/javascript"&gt;
+	$("#myPaginationContainer").pagination({ pageCount: 20, currentPage: 4 });
+&lt;script&gt;</pre>
+					
+					<p><a href="#" class="btn btn-primary btn-small">View Examples</a></p>
+				</div>
+				<div class="row-fluid" style="height: 60px;">
+					<div class="span3">
+						<h4>Product 1</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 2</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 3</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 4</h4>
+					</div>
+				</div>
+				<div class="row-fluid" style="height: 60px;">
+					<div class="span3">
+						<h4>Product 1</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 2</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 3</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 4</h4>
+					</div>
+				</div>
+				<div class="row-fluid" style="height: 60px;">
+					<div class="span3">
+						<h4>Product 1</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 2</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 3</h4>
+					</div>
+					<div class="span3">
+						<h4>Product 4</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<<script type="text/javascript">
+		$(function() {
+			prettyPrint();
+		});
+	</script>
+</body>
+</html>
